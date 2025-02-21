@@ -11,7 +11,7 @@ public class Main {
              PreparedStatement ps = conn.prepareStatement(
                      "SELECT * FROM COURSES");
              ResultSet rs = ps.executeQuery()) {
-            while (rs.next())
+             while (rs.next())
                 System.out.println(rs.getString(1));
         } catch (SQLException e) {
             throw new RuntimeException(e);
